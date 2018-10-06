@@ -1,4 +1,4 @@
-# coding: utf-8
+﻿# coding: utf-8
 
 '''
 演習課題「おみくじを作ろう」
@@ -21,7 +21,11 @@
 # おみくじプログラム
 
 import random
-line = input().rstrip()
+list = input().rstrip().split(",")
+print(list)
+num = len(list)
+kekka = list[random.randrange(num)]
+print(kekka)
 
 # 今回は自力で全部書いてみよう！
 
